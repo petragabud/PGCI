@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Playfair+Display&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#header1
+{ text-align: center;
+    text-decoration: none;
+    margin-bottom: 3%;
+    padding-top: 2%;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+h1 {font-family: "Oswald";
+    font-size: 200%;
+}
+
+#menu-navigation{
+    font-family: "Oswald";
+    font-size: 150%;
+}
