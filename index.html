@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Passy Gene - Password Generator">
@@ -11,95 +11,106 @@
 
     <!-- File path to connect CSS and HTML -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="generator" href="assets/script/script.js">
 
-</head>
+  </head>
 
-<body>
+  <body>
 
     <!-- Site Name in header -->
-    <header id="header1">
-        <a href="index.html">
-            <h1>Passy Gene</h1>
-        </a>
+    <header id="header">
+      <a href="index.html">
+        <h1>Passy Gene</h1>
+      </a>
 
-        <!-- Navigation List -->
-        <nav id="menu-navigation">
-            <a href="#home">HOME</a>
-            <a href="#password-generator">PASSWORD GENERATOR</a>
-            <a href="#about">OUR STORY</a>
-            <a href="#how-it-works">HOW IT WORKS</a>
-            <a href="#reviews">OUR REVIEWS</a>
-            <a href="#contact">CONTACT</a>
-            <a href="#subscribe">SUBSCRIBE</a>
-        </nav>
+      <!-- Navigation List -->
+      <nav id="menu-navigation">
+        <a href="#password-generator">PASSWORD GENERATOR</a>
+        <a href="#about">OUR STORY</a>
+        <a href="#how-it-works">HOW IT WORKS</a>
+        <a href="#reviews">OUR REVIEWS</a>
+        <a href="#contact">CONTACT</a>
+        <a href="#subscribe">SUBSCRIBE</a>
+      </nav>
     </header>
 
-    <section>
+    <section id="generator">
+      <div class="body">
+        <div class="box">
+          <h2>Password Generator</h2>
+          <div class="placeholder">
+            <i onclick="genPassword()" class="fa-solid fa-copy"></i>
+            <i onclick="copyPassword()" class="fa-solid fa-arrow-rotate-right"></i>
+            <input type="text" placeholder="Create Password" id="password" class="output">
+          </div>
+          <table>
+            <th>
+              <div id="generate-button" style="font-size:24px" class="generate-button" onclick="genPassword()"><i class="fa-solid fa-arrow-rotate-right"></i>Generate</div>
+            </th>
+            <th>
+              <a id="copy-button" style="font-size:24px" class="copy-button" onclick="copyPassword()"><i class="fa-solid fa-copy"></i>Copy</a>
+            </th>
+          </table>
+
+        </div>
+      </div>
 
     </section>
 
-    <!-- Contact Area -->
-    <div id="contact">
+    <!-- Subscription Area -->
+    <div id="subscribe">
 
-        <h3>Contact us at info@contact.com or fill in the form</h3>
+      <form action="register.html">
+        <h3>Subscribe</h3>
+        <div class="input-container">
+          <i class="fa fa-user icon"></i>
+          <input class="input-field" type="text" placeholder="Username" name="usrnm">
+        </div>
 
-        <form action="contact-form.html" class="form">
+        <div class="input-container">
+          <i class="fa fa-envelope icon"></i>
+          <input class="input-field" type="text" placeholder="Email" name="email">
+        </div>
 
-            <label for="name" class="form-label">Name:</label>
-            <br>
-            <input type="text" class="input-form" id="name" name="name" required>
-            <br>
-            <label for="email" class="form-label">Email:</label>
-            <br>
-            <input type="email" class="input-form" id="email" name="email" required>
-            <br>
+        <div class="input-container">
+          <i class="fa fa-key icon"></i>
+          <input class="input-field" type="password" placeholder="Password" name="psw">
+        </div>
 
-
-            <textarea placeholder="Message"></textarea>
-            <br>
-            <input type="submit" class="submit-button" value="Submit" aria-label="Button that sends the form">
-        </form>
-
+        <button type="submit" class="register-button">Register</button>
+      </form>
 
     </div>
 
 
 
     <footer>
-        <!-- Social Networks (Love Running) and CopyRight borrowed from Code Institute -->
-        <nav id="social-networks">
-            <ul class="social-networks">
-                <li>
-                    <a href="https://facebook.com" target="_blank" rel="noopener"
-                        aria-label="Visit our Facebook page (opens in a new tab)"><i
-                            class="fa-brands fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com" target="_blank" rel="noopener"
-                        aria-label="Visit our Twitter page (opens in a new tab)"><i
-                            class="fa-brands fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="https://youtube.com" target="_blank" rel="noopener"
-                        aria-label="Visit our YouTube page (opens in a new tab)"><i
-                            class="fa-brands fa-youtube"></i></a>
-                </li>
-                <li>
-                    <a href="https://instagram.com" target="_blank" rel="noopener"
-                        aria-label="Visit our Instagram page (opens in a new tab)"><i
-                            class="fa-brands fa-instagram"></i></a>
-                </li>
-            </ul>
-            <ul class="copyright">
-                <li>
-                    &copy; Copyright 2022 Petra Gabud
-                </li>
-            </ul>
-        </nav>
+      <!-- Social Networks (Love Running) and CopyRight borrowed from Code Institute -->
+      <nav id="social-networks">
+        <ul class="social-networks">
+          <li>
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Visit our YouTube page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+        <ul class="copyright">
+          <li>
+            &copy; Copyright 2022 Petra Gabud
+          </li>
+        </ul>
+      </nav>
     </footer>
 
     <script src="https://kit.fontawesome.com/79aee21b11.js" crossorigin="anonymous"></script>
-</body>
+  </body>
 
 
 </html>
