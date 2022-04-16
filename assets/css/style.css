@@ -1,233 +1,181 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Playfair+Display&family=Roboto:wght@300&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  border: none;
   background-color: #FFFFFF;
-}
-
-header {
-  text-align: center;
-  margin-bottom: 3%;
-  padding-top: 2%;
-  border: none;
+ border: none;
+ margin: 0;
+ padding: 0;
+ }
+ 
+ header {
   background-color: #FFFFFF;
-  font-family: "Oswald", sans-serif;
-}
-
-h1 {
-  color: #e03838;
-  font-size: 400%;
-}
-
-h2 {
-  margin-bottom: 5%;
-  padding-top: 8%;
-  padding-bottom: 8%;
-  text-align: center;
-  font-size: 300%;
-  color: #e45354;
-  font-family: "Oswald", sans-serif;
-}
-
-h3 {
-  font-family: "Oswald", sans-serif;
-  color: #e45354;
-  font-size: 250%;
-}
-
-
-nav {
-  font-size: 120%;
-  word-spacing: 5%;
-  line-height: 225%;
-}
-
-a:link,
-a:visited {
+ border: none;
+ font-family: "Oswald", sans-serif;
+ margin-bottom: 3%;
+ padding-top: 2%;
+ text-align: center;
+ }
+ 
+ h1 {
+   color: #e03838;
+   font-size: 400%;
+ }
+ 
+ h2 {
+   color: #e45354;
+ font-family: "Oswald", sans-serif;
+ font-size: 300%;
+ margin-bottom: 5%;
+ padding-bottom: 8%;
+ padding-top: 8%;
+ text-align: center;
+ }
+ 
+ nav {
+   font-size: 120%;
+ line-height: 225%;
+ word-spacing: 5%;
+ }
+ 
+ a:link,
+ a:visited {
   color: #050505;
-  padding: 1%;
-  text-align: center;
-  text-decoration: none;
-  display: inline;
-}
-
-a:hover,
-a:active {
-  background-color: lightgray;
-}
-
-section {
-  background-color: #F9FAFB;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.box {
+ display: inline;
+ padding: 1%;
+ text-align: center;
+ text-decoration: none;
+ }
+ 
+ a:hover,
+ a:active {
+   background-color: lightgray;
+ }
+ 
+ section {
+   align-items: center;
+ background-color: #F9FAFB;
+ display: flex;
+ justify-content: center;
+ }
+ 
+ .box {
   background-color: white;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 15%;
-
-}
-
-.copy-button,
-.generate-button {
-  font-family: sans-serif;
-  font-size: 15px;
-  margin-top: 40px;
-  border: 2px solid #e03838;
-  width: 155px;
-  height: 50px;
-  text-align: center;
-  background-color: #e45354;
-  display: flex;
-  color: black;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  border-radius: 7px;
-}
-
-.copy-button {
-  margin-left: 85px;
-}
-
-.generate-button,
-.copy-button:hover {
-  color: black;
-  background-color: #e45354;
-}
-
-#generate-button,
-#copy-button {
-  padding: 0;
-}
-
-.placeholder {
-  display: inline-flex;
-  flex-direction: row-reverse;
+ box-sizing: border-box;
+ height: 100%;
+ margin-bottom: 15%;
+ padding: 0;
+ width: 100%;
+ }
+ 
+ .copy-button,
+ .generate-button {
+   align-items: center;
+ background-color: #e45354;
+ border-radius: 7px;
+ border: 2px solid #e03838;
+ color: black;
+ cursor: pointer;
+ display: flex;
+ font-family: sans-serif;
+ font-size: 15px;
+ height: 50px;
+ justify-content: center;
+ margin-top: 40px;
+ text-align: center;
+ width: 155px;
+ }
+ 
+ .copy-button {
+   margin-left: 85px;
+ }
+ 
+ .generate-button,
+ .copy-button:hover {  
+     background-color: #e45354;
+   color: black;
+ }
+ 
+ #generate-button,
+ #copy-button {
+      font-size: 350%;
+   padding: 0;
+ }
+ 
+ .placeholder {
   border: 1px solid #616364;
-  margin: 5%;
-  font-size: 150%;
-}
-
-.placeholder .output {
-  border: none;
-  padding: 5%;
-}
-
-.placeholder .fa-solid {
-  border: none;
-  background: none;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.placeholder span {
-  cursor: pointer;
-  padding: 5%;
-}
-
-
-input[type="text"] {
-  padding: 0;
-  user-select: none;
-  height: auto;
-  width: 120%;
+ display: inline-flex;
+ flex-direction: row-reverse;
+ font-size: 150%;
+ margin: 5%;
+ }
+ 
+ .placeholder .output {
+   border: none;
+   padding: 5%;
+ }
+ 
+ .placeholder .fa-solid {
+   border: none;
+   background: none;
+   cursor: pointer;
+ }
+ 
+ .placeholder span {
+   cursor: pointer;
+   padding: 5%;
+ }
+ 
+ 
+ input[type="text"] {
   border-radius: 7px;
-  border: none;
-  border: 2px solid rgb (13, 152, 245);
-  outline: none;
-  font-size: 100%;
-  display: center;
-}
-
-/* footer details */
-#footer {
-  height: 150px;
-  position: absolute;
+ border: 2px solid;
+ border: none;
+ display: center;
+ font-size: 100%;
+ height: auto;
+ outline: none;
+ padding: 0;
+ user-select: none;
+ width: 120%;
+ }
+ 
+ /* footer details */
+ #footer {
   bottom: 0;
-  width: 100%;
-  margin-top: 20%;
-}
-
-#social-networks {
-  text-align: center;
-  margin-top: 5%;
-}
-
-.social-networks>li {
-  text-align: center;
-  display: inline;
-  min-height: 100%;
-  margin-bottom: -120px;
-  font-size: 150%;
+ height: 150px;
+ margin-top: 20%;
+ position: absolute;
+ width: 100%;
+ }
+ 
+ #social-networks {
+   text-align: center;
+   margin-top: 5%;
+ }
+ 
+ .social-networks > li {
   color: #e45354;
-  opacity: 1;
-}
-
-.social-networks:hover {
-  background-color: none;
-}
-
-/* copyright with my personal name at the bottom of the page */
-.copyright {
+ display: inline;
+ font-size: 150%;
+ min-height: 100%;
+ opacity: 1;
+ text-align: center;
+ }
+ 
+ .fa-brands {
+   color: #e45354;
+ }
+ 
+ .fa-brands:hover {
+   background-color: none;
+   color: #e45354;
+ }
+ 
+ /* copyright with my personal name at the bottom of the page */
+ .copyright {
   color: #e45354;
-  opacity: 1;
-  font-size: 120%;
-  list-style-type: none;
-  text-align: center;
-}
-
-/* Style the input container */
-.input-container {
-  display: flex;
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-/* Style the form icons */
-.icon {
-  padding: 10px;
-  background: #e45354;
-  color: white;
-  min-width: 50px;
-  text-align: center;
-}
-
-/* Style the input fields */
-.input-field {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #e45354;
-  ;
-}
-
-.input-field:focus {
-  border: 2px solid #e45354;
-}
-
-/* Set a style for the submit button */
-.register-button {
-  background-color: #e45354;
-  color: white;
-  padding: 15px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
-.register-button:hover {
-  background-color: #e45354;
-  opacity: 1;
-}
-
-.fa-brands {
-  color: #e45354;
-}
+ font-size: 120%;
+ list-style-type: none;
+ opacity: 1;
+ text-align: center;
+ }
