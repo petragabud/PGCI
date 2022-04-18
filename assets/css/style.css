@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Playfair+Display&family=Roboto:wght@300&display=swap');
 
 header {
-  background-color: #FFFFFF;
-  border: none;
   font-family: "Oswald", sans-serif;
   text-align: center;
 }
@@ -25,11 +23,6 @@ section {
   background-color: none;
   display: flex;
   justify-content: center;
-}
-
-
-.box {
-  background-color: white;
 }
 
 input {
