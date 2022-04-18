@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Passy Gene - Password Generator">
-<meta name="description" content="A password generator is a software tool that creates random or customized passwords for users. It helps users create stronger passwords.">
-     <title>Passy Gene - Password Generator</title>
+    <meta name="description" content="A password generator is a software tool that creates random or customized passwords for users. It helps users create stronger passwords.">
+    <title>Passy Gene - Password Generator</title>
 
     <!-- File path to connect CSS and HTML -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -18,14 +18,7 @@
 
     <!-- Site Name in header -->
     <header id="header">
-      <a href="index.html">
         <h1>Passy Gene</h1>
-      </a>
-
-      <!-- Navigation List -->
-      <nav id="menu-navigation">
-        <a href="#password-generator">PASSWORD GENERATOR</a>
-      </nav>
     </header>
 
     <section id="generator">
@@ -33,16 +26,14 @@
         <div class="box">
           <h2>Password Generator</h2>
           <div class="placeholder">
-            <i onclick="genPassword()" class="fa-solid fa-copy"></i>
-            <i onclick="copyPassword()" class="fa-solid fa-arrow-rotate-right"></i>
             <input type="text" placeholder="Create Password" id="password" class="output">
           </div>
           <table>
             <th>
-              <div id="generate-button" style="font-size: 30%" class="generate-button" onclick="genPassword()"><i class="fa-solid fa-arrow-rotate-right"></i>Generate</div>
+              <div id="generate-button" class="generate-button" onclick="genPassword()">Generate</div>
             </th>
             <th>
-              <a id="copy-button" style="font-size:30%" class="copy-button" onclick="copyPassword()"><i class="fa-solid fa-copy"></i>Copy</a>
+              <a id="copy-button" class="copy-button" onclick="copyPassword()">Copy</a>
             </th>
           </table>
 
